@@ -12,7 +12,7 @@ LOCAL_SRC_FILES:= \
 
 ifeq ($(TARGET_ARCH),sh)
 # SH-4A series virtual address range from 0x00000000 to 0x7FFFFFFF.
-LINKER_TEXT_BASE := 0x70000100
+LINKER_TEXT_BASE := 0x70001000
 else
 # This is aligned to 4K page boundary so that both GNU ld and gold work.  Gold
 # actually produces a correct binary with starting address 0xB0000100 but the
